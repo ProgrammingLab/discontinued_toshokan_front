@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  toshokan_front:
+    image: programminglab/toshokan_front:latest
+    #build: .
+    ports:
+      - "3000:3000"
+    logging:
+      options:
+        max-size: 5m
+        max-file: "10"
